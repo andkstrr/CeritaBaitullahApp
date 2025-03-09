@@ -1,6 +1,6 @@
 import React from 'react';
 import AppColor from '../utils/AppColor';
-import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
+import {StyleSheet, View, Image, TouchableOpacity} from 'react-native';
 
 const Header = () => {
   return (
