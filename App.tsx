@@ -1,16 +1,22 @@
-import React from 'react'
-import Header from './src/components/Header'
-import { StyleSheet, Text, View, StatusBar } from 'react-native'
+import React from 'react';
+import { StyleSheet, View, StatusBar, SafeAreaView } from 'react-native';
+import Dashboard from './src/screen/dashboard/Dashboard';
 
 const App = () => {
   return (
-    <View style={{paddingTop: StatusBar.currentHeight}}>
-      <StatusBar barStyle="dark-content" />
-      <Header />
-    </View>
-  )
-}
+    <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="dark-content" backgroundColor="gray"  />
+      <Dashboard />
+    </SafeAreaView>
+  );
+};
 
-export default App
+export default App;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'white',
+    paddingTop: StatusBar.currentHeight
+  },
+});

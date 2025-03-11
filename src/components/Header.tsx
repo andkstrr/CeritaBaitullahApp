@@ -1,10 +1,11 @@
 import React from 'react';
 import AppColor from '../utils/AppColor';
-import {StyleSheet, View, Image, TouchableOpacity} from 'react-native';
+import { StyleSheet, View, Image, TouchableOpacity } from 'react-native';
 
 const Header = () => {
   return (
     <View style={styles.headerContainer}>
+      {/* BURGER ICON */}
       <View style={styles.iconContainer}>
         <TouchableOpacity>
           <Image
@@ -14,6 +15,7 @@ const Header = () => {
         </TouchableOpacity>
       </View>
       <View style={styles.flexNav}>
+        {/* SEARCH ICON */}
         <View style={styles.iconContainer}>
           <TouchableOpacity>
             <Image
@@ -22,6 +24,7 @@ const Header = () => {
             />
           </TouchableOpacity>
         </View>
+        {/* NOTIFICATION ICON */}
         <View style={styles.iconContainer}>
           <TouchableOpacity>
             <Image
@@ -53,7 +56,7 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   icon: {
-    width: 30,
-    height: 30,
+    width: 23,
+    height: 25,
   },
 });
